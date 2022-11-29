@@ -55,13 +55,13 @@ class HomeView extends GetView<HomeController> {
                                   Text(
                                     'Task Management',
                                     style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 21,
                                         color: AppColors.primaryText),
                                   ),
                                   Text(
                                     'Manage task made easy with friends',
                                     style: TextStyle(
-                                        fontSize: 15,
+                                        fontSize: 16,
                                         color: AppColors.primaryText),
                                   ),
                                 ],
@@ -111,7 +111,7 @@ class HomeView extends GetView<HomeController> {
                                   'My Task',
                                   style: TextStyle(
                                     color: AppColors.primaryText,
-                                    fontSize: 30,
+                                    fontSize: 31,
                                   ),
                                 ),
                                 const SizedBox(
