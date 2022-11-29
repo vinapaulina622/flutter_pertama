@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/about_controller.dart';
+import '../controllers/task_controller.dart';
 
-class AboutView extends GetView<AboutController> {
-  const AboutView({Key? key}) : super(key: key);
+class TaskView extends GetView<TaskController> {
+  const TaskView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AboutView'),
+        title: const Text('TaskView'),
         centerTitle: true,
       ),
       body: Center(
         child: Text(
-          'AboutView is working',
+          'TaskView is working',
           style: TextStyle(fontSize: 20),
         ),
       ),

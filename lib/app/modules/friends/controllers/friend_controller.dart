@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class ViewController extends GetxController {
-  //TODO: Implement ViewController
+class FriendController extends GetxController {
+  //TODO: Implement FriendController
 
   final count = 0.obs;
   @override
