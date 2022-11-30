@@ -25,7 +25,7 @@ class AppPages {
       page: () => HomeView(),
       binding: HomeBinding(),
       transition: Transition.upToDown,
-      //transitionDuration: Duration(seconds: 2),
+      //transitionDuration: Duration(seconds: 5),
     ),
     GetPage(
       name: _Paths.LOGIN,

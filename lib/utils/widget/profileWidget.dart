@@ -10,10 +10,10 @@ class ProfileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: !context.isPhone
-          ? Row(
+      child: !context.isPhone ? Row(
               children: [
-                Expanded(
+                const Expanded(
+                  flex: 1,
                   child: ClipRRect(
                     child: CircleAvatar(
                       backgroundColor: Colors.amber,
@@ -24,13 +24,13 @@ class ProfileWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                // SizedBox(width: 20,),
+                // SizedBox(height: 20,),
                 Expanded(
                   flex: 2,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'Alicia Jasmine',
                         style: TextStyle(
@@ -39,7 +39,7 @@ class ProfileWidget extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'aliciajasmine@gmail.com',
+                        'alicia@gmail.com',
                         style: TextStyle(
                           color: AppColors.primaryText,
                           fontSize: 15,
@@ -51,48 +51,35 @@ class ProfileWidget extends StatelessWidget {
               ],
             )
           : Center(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 20,
-                  ),
-                  ClipRRect(
-                    child: CircleAvatar(
+            child: Column(
+                  children: const [ 
+                    SizedBox(
+                      height: 40, 
+                    ),
+                    CircleAvatar(
                       backgroundColor: Colors.amber,
                       radius: 100,
                       foregroundImage: NetworkImage(
-                        'https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?quality=75&width=982&height=726&auto=webp%27',
+                        'https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?quality=75&width=982&height=726&auto=webp%27',),
+                    ),
+                    //SizeBox(hight: 20,),
+                    Text(
+                      'Alicia Jasmine',
+                      style: TextStyle(
+                        color: AppColors.primaryText,
+                        fontSize: 30,
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Alicia Jasmine',
-                          style: TextStyle(
-                            color: AppColors.primaryText,
-                            fontSize: 30,
-                          ),
-                        ),
-                        Text(
-                          'aliciajasmine@gmail.com',
-                          style: TextStyle(
-                            color: AppColors.primaryText,
-                            fontSize: 15,
-                          ),
-                        ),
+                    Text(
+                      'alicia@gmail.com',
+                      style: TextStyle(
+                        color: AppColors.primaryText,
+                        fontSize: 15,
+                      ),
+                    ),
                       ],
                     ),
-                  ),
-                ],
-              ),
-            ),
-    );
+          ),
+                );
   }
 }

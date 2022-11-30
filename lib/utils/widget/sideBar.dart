@@ -122,14 +122,14 @@ class SideBar extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 100,
-                          decoration: Get.currentRoute == '/friends'
+                          decoration: Get.currentRoute == '/friend'
                               ? BoxDecoration(
                                   borderRadius: BorderRadius.circular(40),
                                   color: Colors.white,
                                 )
                               : const BoxDecoration(),
                           child: Icon(
-                            Get.currentRoute == '/friends'
+                            Get.currentRoute == '/friend'
                                 ? Icons.heart_broken_sharp
                                 : Icons.heart_broken_outlined,
                             color: AppColors.primaryText,
@@ -140,7 +140,7 @@ class SideBar extends StatelessWidget {
                           height: 5,
                         ),
                         const Text(
-                          'Friends',
+                          'Friend',
                           style: TextStyle(
                             color: AppColors.primaryText,
                             fontSize: 16,
