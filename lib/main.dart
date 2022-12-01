@@ -8,11 +8,18 @@ import 'app/routes/app_pages.dart';
 Future<void>main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    GetMaterialApp(
+    StreamBuilder(
+      
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+      return GetMaterialApp(
       debugShowCheckedModeBanner: false, 
       title: "Application",
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
-    ),
-  );
+      initialRoute: snapshot.data !=null? Routes.HOME : Routes.LOGIN,
+      getPages: AppPages.routes, 
+    );
+  },
+));
 }
