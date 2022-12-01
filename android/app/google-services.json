@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "479555109754",
+    "project_id": "flutter-pertama",
+    "storage_bucket": "flutter-pertama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479555109754:android:19e36faba90ca96f390cc3",
+        "android_client_info": {
+          "package_name": "com.example.flutter_pertama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479555109754-7hr3a5cmr6ht8uhfkjrjj4ch3h183fgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqVr7cO-zuZDQVxXIeYuwjxx2eIv5Bm2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479555109754-7hr3a5cmr6ht8uhfkjrjj4ch3h183fgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
