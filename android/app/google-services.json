@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "479555109754",
-    "project_id": "flutter-pertama",
-    "storage_bucket": "flutter-pertama.appspot.com"
+    "project_number": "466853095093",
+    "project_id": "flutter-pertama-ec1ad",
+    "storage_bucket": "flutter-pertama-ec1ad.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:479555109754:android:19e36faba90ca96f390cc3",
+        "mobilesdk_app_id": "1:466853095093:android:7a34976b5a0286603bc0fc",
         "android_client_info": {
           "package_name": "com.example.flutter_pertama"
         }
       },
       "oauth_client": [
         {
-          "client_id": "479555109754-7hr3a5cmr6ht8uhfkjrjj4ch3h183fgn.apps.googleusercontent.com",
+          "client_id": "466853095093-pm66mb2o3839kq7hc2gr0f3pt3upkspp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBqVr7cO-zuZDQVxXIeYuwjxx2eIv5Bm2U"
+          "current_key": "AIzaSyDr58WpqbU64EyV9uCXGlloalKsraStU0w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "479555109754-7hr3a5cmr6ht8uhfkjrjj4ch3h183fgn.apps.googleusercontent.com",
+              "client_id": "466853095093-pm66mb2o3839kq7hc2gr0f3pt3upkspp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
