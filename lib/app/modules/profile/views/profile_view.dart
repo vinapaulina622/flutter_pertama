@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/controller/auth_controller.dart';
 import 'package:flutter_pertama/app/modules/home/views/home_view.dart';
 import 'package:flutter_pertama/app/routes/app_pages.dart';
 import 'package:flutter_pertama/utils/widget/profileWidget.dart';
@@ -15,12 +16,13 @@ import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
 final GlobalKey<ScaffoldState> _drawerKey=GlobalKey();
+final authC = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _drawerKey,
-      drawer: const SideBar(),
+      drawer: const SizedBox(width: 150, child: SideBar()),
       backgroundColor: AppColors.primaryBg,
       body: SafeArea(
         child: Row(
@@ -80,7 +82,7 @@ final GlobalKey<ScaffoldState> _drawerKey=GlobalKey();
                     child: const Text('Cancel'),
                   ),
                   confirm: ElevatedButton(
-                    onPressed: () => Get.toNamed(Routes.LOGIN), 
+                    onPressed: () => authC.logout(), 
                     child: const Text('Sign Out'),
                   ),
                 );

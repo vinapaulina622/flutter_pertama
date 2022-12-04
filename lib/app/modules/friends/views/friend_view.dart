@@ -16,7 +16,7 @@ final GlobalKey<ScaffoldState> _drawerKey=GlobalKey();
   Widget build(BuildContext context) {
     return Scaffold(
       key: _drawerKey,
-      drawer: const SideBar(),
+      drawer: const SizedBox(width: 150, child: SideBar()),
       backgroundColor: AppColors.primaryBg,
       body: SafeArea(
         child: Row(
@@ -51,13 +51,13 @@ final GlobalKey<ScaffoldState> _drawerKey=GlobalKey();
                                 // mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Task Management',
                                     style: TextStyle(
                                         fontSize: 21,
                                         color: AppColors.primaryText),
                                   ),
-                                  Text(
+                                  const Text(
                                     'Manage task made easy with friends',
                                     style: TextStyle(
                                         fontSize: 16,
@@ -152,7 +152,7 @@ final GlobalKey<ScaffoldState> _drawerKey=GlobalKey();
                                       ),
                                     ),
                                 child: 
-                                  Icon(Icons.add_circle_outline),
+                                  const Icon(Icons.add_circle_outline),
                                 ),
                                   )
                                 ),
@@ -162,7 +162,7 @@ final GlobalKey<ScaffoldState> _drawerKey=GlobalKey();
                         },
                       ),
                     ),
-                        MyFriends(),
+                        const MyFriends(),
                       ]),
                     ),
                   ),

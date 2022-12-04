@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_pertama/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthController extends GetxController {
-  Future<UserCredential> signInWithGoogle() async {
+  Future signInWithGoogle() async {
   // Trigger the authentication flow
   final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
@@ -19,6 +21,12 @@ class AuthController extends GetxController {
   print(googleUser?.email);
 
   // Once signed in, return the UserCredential
-  return await FirebaseAuth.instance.signInWithCredential(credential);
-}
+  return await FirebaseAuth.instance
+  .signInWithCredential(credential)
+  .then((value) => Get.offAllNamed(Routes.HOME));
+  }
+  Future logout()async{
+    await FirebaseAuth.instance.signOut(); 
+    Get.offAllNamed(Routes.LOGIN);
+  }
 }
